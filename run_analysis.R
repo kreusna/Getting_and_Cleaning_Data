@@ -8,8 +8,8 @@ path <- getwd()
 
 #Download dateset and unzip
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(url, file.path(path, "dataFiles.zip"))
-unzip(zipfile = "dataFiles.zip")
+#download.file(url, file.path(path, "dataFiles.zip"))
+#unzip(zipfile = "dataFiles.zip")
 
 # Load activity labels + features
 activityLabels <- fread(file.path(path, "UCI HAR Dataset/activity_labels.txt")
@@ -56,11 +56,11 @@ mergedData[["Activity"]] <- factor(mergedData[, Activity]
                                  , labels = activityLabels[["activityName"]])
 mergedData[["SubjectNum"]] <- as.factor(mergedData[, SubjectNum])
 
-#Gather all columns except SubjectNum and Activity
-mergedData <- mergedData %>% gather(variable, value, -c("SubjectNum", "Activity")) 
 
-#Calculate mean by group Activity column and variable column
-mergedData <- mergedData %>% group_by(Activity, variable) %>% dplyr::mutate(mean = mean(value , na.rm = TRUE))
+#Calculate mean by group SubjectNum and Activity column
+mergedData <- mergedData %>% group_by(SubjectNum,Activity) %>% summarise_each(funs(mean))
+
+print(head(mergedData))
 
 #Write tidy data to file
 data.table::fwrite(x = mergedData, file = "tidyData.txt", quote = FALSE)
