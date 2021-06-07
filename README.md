@@ -12,11 +12,11 @@ Data Zip File Location: [UC Irvine Repo](https://d396qusza40orc.cloudfront.net/g
 
 Goal | Item | Link to Item
 --- | --- | ---
-Analysis R Script |  run_analysis.R |  [R Script Link](https://github.com/kreusna/Getting_and_Cleaning_Data/run_analysis.R "run_analysis.R")
-Tidy Data Set |  Clean Data Set |  [Data Set Link](https://github.com/kreusna/Getting_and_Cleaning_Data/tidyData.txt "tidyData.txt")
+Analysis R Script |  run_analysis.R |  [R Script Link](https://github.com/kreusna/Getting_and_Cleaning_Data/blob/main/run_analysis.R "run_analysis.R")
+Tidy Data Set |  Clean Data Set |  [Data Set Link](https://github.com/kreusna/Getting_and_Cleaning_Data/blob/main/tidyData.txt "tidyData.txt")
 Github Repo | Repo |  [Repo Link](https://github.com/kreusna/Getting_and_Cleaning_Data "Click to go to Repo")
-Cookbook | CodeBook.md |  [Repo Link](https://github.com/kreusna/Getting_and_Cleaning_Data/CodeBook.md "CodeBook.md")
-README | README.md |  [Repo Link](https://github.com/kreusna/Getting_and_Cleaning_Data/README.md "README.md")
+Cookbook | CodeBook.md |  [Repo Link](https://github.com/kreusna/Getting_and_Cleaning_Data/blob/main/CodeBook.md "CodeBook.md")
+README | README.md |  [Repo Link](https://github.com/kreusna/Getting_and_Cleaning_Data/blob/main/README.md "README.md")
 
 ## Contributors
 
